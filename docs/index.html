@@ -9,6 +9,10 @@
   <link rel="stylesheet" href="//unpkg.com/docsify/lib/themes/vue.css">
 </head>
 <body>
+  <nav>
+    <a href="#/">EN</a>
+    <a href="#/zh-cn/">中文</a>
+  </nav>
   <div data-app id="main">加载中</div>
   <script>
     window.$docsify = {
@@ -16,7 +20,11 @@
       loadSidebar: true,
       name: '',
       repo: '',
-      subMaxLevel: 2
+      subMaxLevel: 2,
+      alias: {
+        '/.*/_sidebar.md': '/_sidebar.md'
+      },
+      coverpage: true
     }
   </script>
   <script src="//unpkg.com/docsify/lib/docsify.min.js"></script>
